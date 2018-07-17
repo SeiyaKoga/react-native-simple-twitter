@@ -8,23 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:watanabeyu/react-native-simple-twitter.git"
+    "url": "git@github.com:SeiyaKoga/react-native-simple-twitter.git"
   },
   "keywords": [
     "react-native",
-    "expo",
     "twitter"
   ],
-  "author": "Yu Watanabe <fight.ippatu5648@gmail.com> (https://github.com/watanabeyu)",
+  "author": "https://github.com/SeiyaKoga/react-native-simple-twitter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/watanabeyu/react-native-simple-twitter/issues"
+    "url": "https://github.com/SeiyaKoga/react-native-simple-twitter/issues"
   },
-  "homepage": "https://github.com/watanabeyu/react-native-simple-twitter",
+  "homepage": "https://github.com/SeiyaKoga/react-native-simple-twitter",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
-    "react-native-safe-area-view": "^0.8.0",
-    "@expo/vector-icons": "^6.3.1"
+    "react-native-safe-area-view": "^0.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
