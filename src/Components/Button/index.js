@@ -117,33 +117,16 @@ export default class TWLoginButton extends React.Component {
   }
 
   render() {
-    let Component;
-
-    switch (this.props.type) {
-      case 'TouchableOpacity':
-        Component = TouchableOpacity;
-        break;
-      case 'TouchableHighlight':
-        Component = TouchableHighlight;
-        break;
-      case 'TouchableWithoutFeedback':
-        Component = TouchableWithoutFeedback;
-        break;
-      default:
-        console.warn('TWLoginButton type must be TouchableOpacity or TouchableHighlight or TouchableWithoutFeedback');
-        return null;
-    }
-
     return (
-      <Component {...this.props} onPress={this.onButtonPress}>
+      <TouchableOpacity style={[styles.button, { marginBottom: this.props.marginBottom }]} onPress={this.onButtonPress}>
         {this.props.children}
         <Modal visible={this.state.isVisible} animationType="slide" onRequestClose={() => { }}>
-          <SafeAreaView style={[styles.safeArea, { backgroundColor: this.props.headerColor }]}>
-            {this.renderHeader({ headerColor: this.props.headerColor, onClose: this.onClose })}
+          <SafeAreaView style={styles.safeArea}>
+            {this.renderHeader({ headerColor: 'rgb(35,188,168)', onClose: this.onClose })}
             <WebView source={{ uri: this.state.authUrl }} onNavigationStateChange={this.onNavigationStateChange} />
           </SafeAreaView>
         </Modal>
-      </Component>
+      </TouchableOpacity>
     );
   }
 }

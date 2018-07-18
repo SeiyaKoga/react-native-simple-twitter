@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
   closeButton: {
     paddingHorizontal: 16,
   },
+  text: {
+    color: '#fff'
+  }
 });
 
 export default styles;
