@@ -118,7 +118,7 @@ export default class TWLoginButton extends React.Component {
 
   render() {
     return (
-      <TouchableOpacity style={[styles.button, { marginBottom: this.props.marginBottom }]} onPress={this.onButtonPress}>
+      <TouchableOpacity style={this.props.style} onPress={this.onButtonPress}>
         {this.props.children}
         <Modal visible={this.state.isVisible} animationType="slide" onRequestClose={() => { }}>
           <SafeAreaView style={styles.safeArea}>
